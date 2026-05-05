@@ -113,7 +113,7 @@ const PROFILE = {
   photo: "Henri-Salokangas-3_2b.jpg",          // replace with your photo filename
   email: "henri.salokangas@thl.fi",
   cv:    "CV_Salokangas.pdf",  // replace with your CV filename when ready
-  scholar: "",                 // add your Google Scholar URL here
+  scholar: "https://scholar.google.com/citations?user=q0zL8ioAAAAJ",                 // add your Google Scholar URL here
   orcid:   "",                 // add your ORCID URL here
   position: [
     'Senior Researcher, <strong><a href="https://thl.fi">Finnish Institute for Health and Welfare (THL)</a></strong>',
@@ -266,7 +266,7 @@ const PUBLICATIONS = [
 const WORKING_PAPERS = [
     {
     title: "Parental Job Loss and Children's Socioeconomic Disadvantage",
-    coauthors: 'with Niina Eskelinen and <a href="https://www.utu.fi/en/research/invest">Laura Jernström</a>',
+    coauthors: 'with <a href="https://www.utu.fi/fi/ihmiset/niko-eskelinen">Niko Eskelinen</a> and <a href="https://www.utu.fi/en/research/invest">Laura Jernström</a>',
     badge: "INVEST Working Papers 136/2024",
     links: []
   },
@@ -508,9 +508,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Papers
-  renderPapers(WORKING_PAPERS, 'working-papers-list');
-  renderPapers(WORK_IN_PROGRESS, 'wip-list');
+    renderPapers(WORK_IN_PROGRESS, 'wip-list');
   renderPublications(PUBLICATIONS, 'publications-list');
+  renderPapers(WORKING_PAPERS, 'working-papers-list');
   renderPublications(BOOK_CHAPTERS, 'book-chapters-list');
   renderPolicy(POLICY, 'policy-list');
   renderTeaching(TEACHING, VISITING_LECTURES);
