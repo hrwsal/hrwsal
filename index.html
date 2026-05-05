@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Henri Salokangas — Senior Researcher at INVEST Research Flagship Centre, University of Turku. Research on health economics, mental health, labor markets, and causal inference." />
+  <title>Henri Salokangas</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Structured metadata for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Henri Salokangas",
+    "jobTitle": "Senior Researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "INVEST Research Flagship Centre, University of Turku"
+    },
+    "url": "https://yourusername.github.io",
+    "email": "hrwsal@utu.fi",
+    "knowsAbout": ["health economics", "mental health", "labor markets", "causal inference", "quasi-experimental methods"]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #1e6b45; --blue-light: #d4ead9; --text: #1a1a1a;
+      --muted: #6b7280; --border: #e5e7eb;
+    }
+    body { font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.7; color: var(--text); background: #fff; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: #fff; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border); transition: box-shadow 0.2s; }
+    header.scrolled { box-shadow: 0 2px 10px rgba(0,0,0,0.07); }
+    .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: center; gap: 32px; height: 52px; }
+    .header-name { font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.9); letter-spacing: 0.01em; white-space: nowrap; }
+    nav { display: flex; gap: 18px; }
+    nav a { font-size: 12px; font-weight: 500; color: var(--muted); letter-spacing: 0.02em; text-transform: uppercase; transition: color 0.15s; white-space: nowrap; }
+    nav a:hover { color: var(--text); text-decoration: none; }
+    nav a.active { color: var(--text); font-weight: 600; }
+    nav a.nav-cv { color: var(--blue); }
+    nav a.nav-cv:hover { color: var(--text); }
+    .layout { max-width: 1100px; margin: 0 auto; display: flex; gap: 32px; padding: 0 40px; align-items: flex-start; }
+    .sidebar { width: 260px; flex-shrink: 0; position: sticky; top: 52px; padding: 48px 0 60px; padding-right: 24px; }
+    .main-content { flex: 1; min-width: 0; padding-bottom: 80px; }
+    .sidebar-photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; object-position: center 10%; border: 3px solid var(--blue-light); box-shadow: 0 2px 12px rgba(30,107,69,0.10); display: block; margin-bottom: 20px; }
+    .sidebar h1 { font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: var(--text); margin-bottom: 16px; line-height: 1.25; }
+    .sidebar .position { font-size: 13px; color: var(--text); line-height: 1.65; margin-bottom: 14px; }
+    .sidebar .position a { color: var(--blue); font-weight: 600; }
+    .sidebar-about { font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 18px; }
+    .sidebar-about p + p { margin-top: 8px; }
+    .sidebar-links { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+    .sidebar-links .email { font-size: 13px; color: var(--text); font-weight: 400; }
+    .sidebar-btn { display: inline-block; padding: 4px 12px; background: transparent; color: var(--muted) !important; border: 1px solid var(--border); border-radius: 4px; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; transition: color 0.15s, border-color 0.15s, background 0.15s; text-decoration: none !important; }
+    .sidebar-btn:hover { color: var(--text) !important; border-color: #aaa; }
+    .sidebar-btns { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+    .sidebar-btn-icon { width: 30px; height: 26px; padding: 0; display: inline-flex; align-items: center; justify-content: center; }
+    .sidebar-btn-icon svg { width: 14px; height: 14px; }
+    .about-intro { padding-top: 28px; font-size: 15px; line-height: 1.8; color: #333; }
+    .section-subheading { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-top: 20px; margin-bottom: 4px; }
+    .lang-note { font-style: normal; font-weight: 400; color: var(--muted); opacity: 0.7; }
+    .about-intro p + p { margin-top: 10px; }
+    section { padding-top: 36px; scroll-margin-top: 68px; }
+    section h2 { font-family: 'EB Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text); margin-bottom: 14px; padding-left: 10px; border-left: 3px solid var(--blue); }
+    .paper { padding: 10px 0; }
+    .paper:first-child { padding-top: 4px; }
+    .paper-title { font-weight: 600; font-size: 14.5px; color: var(--text); line-height: 1.45; }
+    .paper-meta { font-size: 13.5px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+    .paper-meta a { color: var(--muted); text-decoration: underline; text-decoration-color: #ccc; text-underline-offset: 2px; }
+    .paper-meta a:hover { color: var(--text); text-decoration-color: #888; }
+    .paper-meta .journal { font-style: italic; font-weight: 600; color: var(--text); }
+    .paper-title-link { color: var(--text); text-decoration: underline; text-decoration-color: #bbb; text-underline-offset: 2px; }
+    .paper-title-link:hover { color: var(--blue); text-decoration-color: var(--blue); }
+    .paper-inline-links { font-weight: 400; font-size: 13px; color: var(--muted); }
+    .paper-inline-links a { color: var(--muted); text-decoration: none; }
+    .paper-inline-links a:hover { color: var(--blue); text-decoration: underline; }
+    .policy-item { padding: 10px 0; }
+    .policy-item:first-child { padding-top: 4px; }
+    .policy-title { font-size: 14.5px; font-weight: 600; line-height: 1.45; }
+    .policy-meta { font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+    .teaching-item { padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .teaching-item:last-child { border-bottom: none; }
+    .teaching-title { font-size: 14.5px; font-weight: 600; line-height: 1.45; }
+    .teaching-meta { font-size: 13px; color: var(--muted); margin-top: 3px; line-height: 1.5; }
+    .news-list { list-style: none; padding: 0; }
+    .news-list li { display: flex; gap: 16px; padding: 6px 0; font-size: 13.5px; line-height: 1.5; }
+    .news-list li .news-year { color: var(--muted); font-weight: 500; white-space: nowrap; min-width: 38px; }
+    @media (max-width: 700px) {
+      .layout { flex-direction: column; padding: 0 20px; gap: 0; }
+      .sidebar { position: static; width: 100%; padding: 28px 0 24px; border-right: none; border-bottom: 1px solid var(--border); }
+      .sidebar-photo { width: 100px; height: 100px; }
+      .sidebar h1 { font-size: 24px; }
+      header { position: sticky; top: 0; }
+      .header-inner { height: auto; padding: 10px 20px; flex-direction: column; gap: 0; }
+      nav { flex-wrap: wrap; justify-content: center; gap: 6px 14px; padding: 4px 0; }
+      nav a { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+<script>
+// ============================================================
+//  EDIT YOUR CONTENT HERE
+// ============================================================
+
+const PROFILE = {
+  name:  "Henri Salokangas",
+  photo: "photo.jpg",          // replace with your photo filename
+  email: "hrwsal@utu.fi",
+  cv:    "cv_salokangas.pdf",  // replace with your CV filename when ready
+  scholar: "",                 // add your Google Scholar URL here
+  orcid:   "",                 // add your ORCID URL here
+  position: [
+    'Senior Researcher, <strong><a href="https://www.utu.fi/en/research/invest">INVEST Research Flagship Centre</a></strong>, University of Turku',
+    'Senior Researcher, <strong><a href="https://thl.fi">Finnish Institute for Health and Welfare (THL)</a></strong>',
+    'PhD, <strong>University of Turku</strong>'
+  ]
+};
+
+const ABOUT = [
+  "I am an applied economist working at the intersection of health economics and labor economics. My research studies how health shocks — including mental disorders, cancer diagnoses, and musculoskeletal conditions — shape individuals' labor market trajectories and family outcomes, with a focus on causal identification using Finnish administrative register data.",
+  "I am affiliated with the <a href='https://www.utu.fi/en/research/invest'>INVEST Research Flagship Centre</a> at the University of Turku and the Finnish Institute for Health and Welfare (THL)."
+];
+
+const NEWS = [
+  { year: "2026", text: 'New paper published: "The effect of age-specific stay-at-home recommendation on healthcare utilization" in <em>European Journal of Health Economics</em>' },
+  { year: "2025", text: 'Paper published: "A family affair? Long-term economic and mental health effects of spousal cancer" in <em>Journal of Population Economics</em>' },
+  { year: "2025", text: '"Basic income and union stability" accepted for publication in <em>Demographic Research</em>' },
+];
+
+const WORKING_PAPERS = [
+  {
+    title: "Mental Disorders and Earnings in the Short and the Very Long Term",
+    coauthors: "",
+    badge: "INVEST Working Papers 107/2024",
+    links: []
+  },
+  {
+    title: "Parental Job Loss and Children's Socioeconomic Disadvantage",
+    coauthors: 'with Niina Eskelinen and <a href="https://www.utu.fi/en/research/invest">Laura Jernström</a>',
+    badge: "INVEST Working Papers 136/2024",
+    links: []
+  },
+  {
+    title: "Basic Income and Union Stability",
+    coauthors: "",
+    badge: "Accepted, Demographic Research",
+    links: []
+  },
+  {
+    title: "Causal Effect of Education on Cognitive Health: Evidence from Compulsory Schooling Reforms",
+    coauthors: 'with Kim Karppinen, <a href="https://www.utu.fi/en/people/mika-kortelainen">Mika Kortelainen</a>, and Ismo Linnosmaa',
+    badge: "",
+    links: []
+  },
+  {
+    title: "The Impact of Musculoskeletal Disorders on Employment Outcomes: A Nationwide Finnish Cohort Study",
+    coauthors: 'with Jukka Laasonen, Miquel Serra-Burriel, and Lauri Sääksvuori',
+    badge: "",
+    links: []
+  },
+  {
+    title: "Sick of Your Grandchildren? Examining Health Spillovers in Aging Populations",
+    coauthors: 'with <a href="https://alicegoisis.com/">Alice Goisis</a> and Tapio Räsänen',
+    badge: "",
+    links: []
+  },
+  {
+    title: "Health Shocks, Psychiatric Morbidity and Genes: Evidence from Cancer Diagnoses",
+    coauthors: 'with Katri Kantojärvi',
+    badge: "",
+    links: []
+  },
+  {
+    title: "Job Loss, Earnings Trajectories and Genes: A Comparison of Endogenous and Exogenous Forms of Job Loss",
+    coauthors: 'with Henrik Dobewall, Gaia Ghirardi, Arno van Hootegem, Laura Jernström, and <a href="https://thl.fi/en/about-us/organisation/departments-and-units/public-health-and-welfare/welfare-state-research-and-reform/social-sustainability/staff/maria-vaalavuo">Maria Vaalavuo</a>',
+    badge: "",
+    links: []
+  },
+  {
+    title: "Exploring the Labor Market Consequences of Psychiatric Disorders: An Event Study Approach",
+    coauthors: "",
+    badge: "Aboa Centre for Economics Discussion Paper No. 148",
+    links: []
+  },
+  {
+    title: "Mental Disorders and Lifetime Earnings",
+    coauthors: "",
+    badge: "Aboa Centre for Economics Discussion Paper No. 145",
+    links: []
+  },
+  {
+    title: "The Long-Term Effects of Alcohol Availability on Mortality: Evidence from an Alcohol Reform",
+    coauthors: "",
+    badge: "Aboa Centre for Economics Discussion Paper No. 115",
+    links: []
+  }
+];
+
+const WORK_IN_PROGRESS = [
+  {
+    title: "Health \"Shocks\"",
+    coauthors: 'with <a href="https://sites.google.com/site/mhalla1980/">Martin Halla</a> and Ossi Tahvonen',
+    badge: "",
+    links: []
+  },
+  {
+    title: "Transnational Mental Health Costs of War",
+    coauthors: 'with Thang Dang and <a href="https://jounihelske.netlify.app/">Jouni Helske</a>',
+    badge: "",
+    links: []
+  },
+  {
+    title: "Forced Migration and Mental Health",
+    coauthors: 'with Jari Haukka, Pekka Martikainen, <a href="https://hse-econ.fi/sarvimaki/">Matti Sarvimäki</a>, and Jaana Suvisaari',
+    badge: "",
+    links: []
+  },
+  {
+    title: "Mental Health Treatment Among Family Members After a Relative's Cancer Diagnosis",
+    coauthors: 'with <a href="http://www.petribockerman.fi/">Petri Böckerman</a>, <a href="https://www.utu.fi/en/people/mika-kortelainen">Mika Kortelainen</a>, Jaana Suvisaari, and <a href="https://thl.fi/en/about-us/organisation/departments-and-units/public-health-and-welfare/welfare-state-research-and-reform/social-sustainability/staff/maria-vaalavuo">Maria Vaalavuo</a>',
+    badge: "",
+    links: []
+  }
+];
+
+const PUBLICATIONS = [
+  {
+    title: "The Effect of Age-Specific Stay-at-Home Recommendation on Healthcare Utilization: Evidence from Finland's COVID-19 Policy",
+    coauthors: 'with Jukka Laaksonen and <a href="https://www.utu.fi/en/people/mika-kortelainen">Mika Kortelainen</a>',
+    journal: "European Journal of Health Economics",
+    year: "2026", volume: "", pages: "",
+    links: [["Journal", "https://doi.org/10.1007/s10198-025-01887-z"]]
+  },
+  {
+    title: "A Family Affair? Long-Term Economic and Mental Health Effects of Spousal Cancer",
+    coauthors: 'with <a href="http://www.petribockerman.fi/">Petri Böckerman</a>, <a href="https://www.utu.fi/en/people/mika-kortelainen">Mika Kortelainen</a>, and <a href="https://thl.fi/en/about-us/organisation/departments-and-units/public-health-and-welfare/welfare-state-research-and-reform/social-sustainability/staff/maria-vaalavuo">Maria Vaalavuo</a>',
+    journal: "Journal of Population Economics",
+    year: "2025", volume: "", pages: "",
+    links: [["Journal", "https://doi.org/10.1007/s00148-025-01070-x"]]
+  },
+  {
+    title: "Childhood Adversities and Long-Term Sleep Problems: The Mediating Role of Affective Symptoms",
+    coauthors: 'with R.K.R. Salokangas, T. From, L. Lehtoranta, A. Juolevi, S. Koskinen, and J. Hietala',
+    journal: "Sleep Medicine",
+    year: "2025", volume: "128", pages: "110–116",
+    links: []
+  },
+  {
+    title: "Effects of Childhood Adversities on Alexithymia Features Vary Between Sexes",
+    coauthors: 'with R.K.R. Salokangas, T. From, L. Lehtoranta, J. Suvisaari, S. Koskinen, J. Hietala, M. Joukamaa, and M. Karukivi',
+    journal: "European Journal of Psychotraumatology",
+    year: "2024", volume: "15(1)", pages: "",
+    links: []
+  },
+  {
+    title: "Gender Differences in the Association Between Adverse Childhood Experiences and Premature Mortality",
+    coauthors: 'with R.K.R. Salokangas, T. From, L. Lehtoranta, A. Juolevi, S. Koskinen, and J. Hietala',
+    journal: "Child Abuse & Neglect",
+    year: "2024", volume: "153", pages: "",
+    links: []
+  },
+  {
+    title: "Gender Inequality Reinforced: The Impact of a Child's Health Shock on Parents' Labor Market Trajectories",
+    coauthors: 'with <a href="https://thl.fi/en/about-us/organisation/departments-and-units/public-health-and-welfare/welfare-state-research-and-reform/social-sustainability/staff/maria-vaalavuo">Maria Vaalavuo</a> and Ossi Tahvonen',
+    journal: "Demography",
+    year: "2023", volume: "60(4)", pages: "1005–1029",
+    links: [["Journal", "https://doi.org/10.1215/00703370-10828906"]]
+  },
+  {
+    title: "Did the Finnish Depression of the Early 1990s Have a Silver Lining? The Effect of Unemployment on Long-Term Physical Activity",
+    coauthors: 'with <a href="http://www.petribockerman.fi/">Petri Böckerman</a>, S. Huikari, M. Korhonen, R. Korpelainen',
+    journal: "Economics & Human Biology",
+    year: "2022", volume: "46", pages: "",
+    links: [["Journal", "https://doi.org/10.1016/j.ehb.2022.101139"]]
+  },
+  {
+    title: "Effect of Childhood Adversities on Alcohol Problems Is Mainly Mediated by Depression",
+    coauthors: 'with T. From, S. Luutonen, and J. Hietala',
+    journal: "The American Journal on Addictions",
+    year: "2022", volume: "27(5)", pages: "391–399",
+    links: [["Journal", "https://doi.org/10.1111/ajad.12734"]]
+  },
+  {
+    title: "Determinants of Costs of Care for Patients Attending Primary Care",
+    coauthors: 'with T. From, S. Luutonen, and J. Hietala',
+    journal: "Psychiatria Fennica",
+    year: "2017", volume: "48", pages: "64–82",
+    links: []
+  }
+];
+
+const BOOK_CHAPTERS = [
+  {
+    title: "Lessons from the Finnish Basic Income Experiment",
+    coauthors: 'with P. Moisio, O. Sirniö, and H. Hiilamo',
+    journal: "Beyond the Nordic Welfare State, Edward Elgar Publishing",
+    year: "2023", volume: "", pages: "265–280",
+    links: [["Book", "https://doi.org/10.4337/9781035375448.00024"]]
+  }
+];
+
+const POLICY = [
+  {
+    title: "Taloustieteilijät monitieteisessä tutkimusyhteisössä: Kokemuksia INVEST-lippulaivasta",
+    meta: "<em>Kansantaloudellinen aikakauskirja</em>, 121(2), 108–115 · 2025",
+    link: "",
+    lang: "fi"
+  },
+  {
+    title: "Syövän vaikutukset puolison tuloihin ja työllisyyteen",
+    meta: 'with <a href="http://www.petribockerman.fi/">Petri Böckerman</a>, <a href="https://www.utu.fi/en/people/mika-kortelainen">Mika Kortelainen</a>, and <a href="https://thl.fi/en/about-us/organisation/departments-and-units/public-health-and-welfare/welfare-state-research-and-reform/social-sustainability/staff/maria-vaalavuo">Maria Vaalavuo</a> · <em>Sosiaalilääketieteen aikakauskirja</em> 60(3), 2023',
+    link: "https://doi.org/10.23990/sa.122525",
+    lang: "fi"
+  },
+  {
+    title: "Kvasikokeelliset menetelmät terveydenhuollon ja terveystaloustieteen vaikutusarvioinneissa",
+    meta: 'with <a href="https://www.utu.fi/en/people/mika-kortelainen">Mika Kortelainen</a> · <em>Sosiaalilääketieteen aikakauskirja</em> 60(3), 2023',
+    link: "https://doi.org/10.23990/sa.122529",
+    lang: "fi"
+  },
+  {
+    title: "Lapsen vakava sairastuminen kasvattaa äitien ja isien välistä eriarvoisuutta työmarkkinoilla",
+    meta: 'with <a href="https://thl.fi/en/about-us/organisation/departments-and-units/public-health-and-welfare/welfare-state-research-and-reform/social-sustainability/staff/maria-vaalavuo">Maria Vaalavuo</a> · <em>INVEST Blog</em> 11/2022',
+    link: "",
+    lang: "fi"
+  },
+  {
+    title: "Lapsen sairastuminen syöpään aiheuttaa mielenterveysoireita etenkin äidille",
+    meta: 'with <a href="https://thl.fi/en/about-us/organisation/departments-and-units/public-health-and-welfare/welfare-state-research-and-reform/social-sustainability/staff/maria-vaalavuo">Maria Vaalavuo</a> and Ossi Tahvonen · <em>SYLVA Tutkimus: Tietoa &amp; Tilastoja</em> 2/2021',
+    link: "",
+    lang: "fi"
+  },
+  {
+    title: "Lapsen sairastuminen syöpään vähentää etenkin äitien työtuloja",
+    meta: 'with <a href="https://thl.fi/en/about-us/organisation/departments-and-units/public-health-and-welfare/welfare-state-research-and-reform/social-sustainability/staff/maria-vaalavuo">Maria Vaalavuo</a> and Ossi Tahvonen · <em>SYLVA Tutkimus: Tietoa &amp; Tilastoja</em> 1/2021',
+    link: "",
+    lang: "fi"
+  },
+  {
+    title: "Esseitä taloudellisesta toiminnasta ja mielenterveyshäiriöistä",
+    meta: '<em>Kansantaloudellinen aikakauskirja</em>, 117(1), 109–114 · 2021',
+    link: "",
+    lang: "fi"
+  }
+];
+
+const TEACHING = [
+  {
+    title: "Causal Inference in Healthcare",
+    meta: '2023– · Economics: Master, PhD · jointly with <a href="https://www.utu.fi/en/people/mika-kortelainen">Mika Kortelainen</a> · Turku School of Economics, University of Turku'
+  },
+  {
+    title: "Economic History as a Laboratory of Empirical Research",
+    meta: '2021–2022 · Economics: Bachelor · Turku School of Economics, University of Turku'
+  },
+  {
+    title: "Introduction to Health Economics",
+    meta: '2020–2023 · Nursing Sciences: PhD level · Faculty of Medicine, University of Turku'
+  }
+];
+
+const VISITING_LECTURES = [
+  { year: "2025", text: '"Health economics" (2h), <em>Empiirinen yhteiskuntapolitiikka</em>, Economics: Bachelor, University of Turku' },
+  { year: "2024", text: '"Economics of mental disorders" (4h), <em>Fundamentals of Public Mental Health</em>, Master\'s Degree Programme in Public Mental Health, University of Turku' },
+  { year: "2024", text: '"Health economics" (2h), <em>Empiirinen yhteiskuntapolitiikka</em>, Economics: Bachelor, University of Turku' },
+  { year: "2022", text: '"Health economics" (2h), <em>Mielenterveys ilmiönä</em>, Health Sciences: Bachelor, University of Tampere' }
+];
+
+// ============================================================
+//  STOP EDITING — everything below renders the page
+// ============================================================
+
+function renderPapers(list, containerId) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = list.map(p => {
+    const validLinks = (p.links || []).filter(([, url]) => url && url !== '#');
+    const primaryLink = validLinks.length ? validLinks[0][1] : null;
+    const extraLinks = validLinks.slice(1);
+    const titleHtml = primaryLink
+      ? `<a href="${primaryLink}" class="paper-title-link">${p.title}</a>`
+      : p.title;
+    const linksHtml = extraLinks.length
+      ? `<span class="paper-inline-links">${extraLinks.map(([label, url]) => `[<a href="${url}">${label}</a>]`).join(' ')}</span>`
+      : '';
+    const rows = [];
+    if (p.coauthors) rows.push(`<div class="paper-meta">${p.coauthors}</div>`);
+    if (p.badge || linksHtml) {
+      const parts = [];
+      if (p.badge) parts.push(`<span class="journal">${p.badge}</span>`);
+      if (linksHtml) parts.push(linksHtml);
+      rows.push(`<div class="paper-meta">${parts.join(' ')}</div>`);
+    }
+    return `
+      <div class="paper">
+        <div class="paper-title">${titleHtml}</div>
+        ${rows.join('')}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderPublications(list, containerId) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = list.map(p => {
+    const validLinks = (p.links || []).filter(([, url]) => url && url !== '#');
+    const primaryLink = validLinks.length ? validLinks[0][1] : null;
+    const extraLinks = validLinks.slice(1);
+    const titleHtml = primaryLink
+      ? `<a href="${primaryLink}" class="paper-title-link">${p.title}</a>`
+      : p.title;
+    const linksHtml = extraLinks.length
+      ? `<div class="paper-meta"><span class="paper-inline-links">${extraLinks.map(([label, url]) => `[<a href="${url}">${label}</a>]`).join(' ')}</span></div>`
+      : '';
+    return `
+      <div class="paper">
+        <div class="paper-title">${titleHtml}</div>
+        <div class="paper-meta">
+          ${p.coauthors}<br>
+          <span class="journal">${p.journal}</span>, ${p.year}${p.volume ? ', ' + p.volume : ''}${p.pages ? ', pp. ' + p.pages : ''}
+        </div>
+        ${linksHtml}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderPolicy(list, containerId) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = list.map(p => {
+    const titleHtml = p.link
+      ? `<a href="${p.link}" class="paper-title-link">${p.title}</a>`
+      : p.title;
+    const langNote = p.lang === 'fi' ? ' <span class="lang-note">in Finnish</span>' : '';
+    return `
+      <div class="policy-item">
+        <div class="policy-title">${titleHtml}</div>
+        <div class="policy-meta">${p.meta}${langNote}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderTeaching(list, visitingList) {
+  const el = document.getElementById('teaching-list');
+  const mainHtml = list.map(t => `
+    <div class="teaching-item">
+      <div class="teaching-title">${t.title}</div>
+      <div class="teaching-meta">${t.meta}</div>
+    </div>
+  `).join('');
+
+  const visitingHtml = visitingList.map(v =>
+    `<li><span class="news-year">${v.year}</span><span>${v.text}</span></li>`
+  ).join('');
+
+  el.innerHTML = mainHtml + `
+    <div class="section-subheading" style="margin-top:18px;">Visiting Lectures</div>
+    <ul class="news-list">${visitingHtml}</ul>
+  `;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Profile / hero
+  document.getElementById('hero-photo').src = PROFILE.photo;
+  document.getElementById('hero-photo').alt = PROFILE.name;
+  document.getElementById('hero-name').textContent = PROFILE.name;
+  const pos = PROFILE.position;
+  const emailLine = `<span style="color:var(--muted)">email</span> <a href="mailto:${PROFILE.email}" style="color:var(--text);text-decoration:none;">${PROFILE.email}</a>`;
+  document.getElementById('hero-position').innerHTML = [...pos, emailLine].join('<br>');
+  document.getElementById('hero-cv').href = PROFILE.cv;
+
+  // Conditionally render Google Scholar and ORCID buttons
+  const btnContainer = document.getElementById('sidebar-btns');
+  if (PROFILE.scholar) {
+    const a = document.createElement('a');
+    a.href = PROFILE.scholar;
+    a.className = 'sidebar-btn sidebar-btn-icon';
+    a.title = 'Google Scholar';
+    a.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.749-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>`;
+    btnContainer.appendChild(a);
+  }
+  if (PROFILE.orcid) {
+    const a = document.createElement('a');
+    a.href = PROFILE.orcid;
+    a.className = 'sidebar-btn sidebar-btn-icon';
+    a.title = 'ORCID';
+    a.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>`;
+    btnContainer.appendChild(a);
+  }
+
+  // About
+  document.getElementById('about-text').innerHTML = ABOUT.map(p => `<p>${p}</p>`).join('');
+
+  // News section — hide if empty
+  if (NEWS.length > 0) {
+    document.getElementById('news-section').style.display = '';
+    document.getElementById('news-list').innerHTML = NEWS.map(n =>
+      `<li><span class="news-year">${n.year}</span><span>${n.text}</span></li>`
+    ).join('');
+  }
+
+  // Papers
+  renderPapers(WORKING_PAPERS, 'working-papers-list');
+  renderPapers(WORK_IN_PROGRESS, 'wip-list');
+  renderPublications(PUBLICATIONS, 'publications-list');
+  renderPublications(BOOK_CHAPTERS, 'book-chapters-list');
+  renderPolicy(POLICY, 'policy-list');
+  renderTeaching(TEACHING, VISITING_LECTURES);
+
+  // Header shadow on scroll
+  window.addEventListener('scroll', () => {
+    document.querySelector('header').classList.toggle('scrolled', window.scrollY > 0);
+  }, { passive: true });
+
+  // Active nav link tracks current section
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-10% 0px -80% 0px' });
+  sections.forEach(s => sectionObserver.observe(s));
+});
+</script>
+
+<header>
+  <div class="header-inner">
+    <nav>
+      <a href="#working-papers">Working Papers</a>
+      <a href="#publications">Publications</a>
+      <a href="#wip">In Progress</a>
+      <a href="#policy">Policy Work</a>
+      <a href="#teaching">Teaching</a>
+      <a href="cv_salokangas.pdf" class="nav-cv">CV</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <img id="hero-photo" src="" class="sidebar-photo" alt="">
+    <h1 id="hero-name"></h1>
+    <div class="position" id="hero-position"></div>
+    <div class="sidebar-links">
+      <div id="sidebar-btns" class="sidebar-btns">
+        <a id="hero-cv" href="" class="sidebar-btn sidebar-btn-icon" title="CV">CV</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div id="about-text" class="about-intro"></div>
+
+    <!-- News section: hidden by default, shown when NEWS array is non-empty -->
+    <section id="news-section" style="display:none;">
+      <h2>News</h2>
+      <ul id="news-list" class="news-list"></ul>
+    </section>
+
+    <section id="working-papers">
+      <h2>Working Papers</h2>
+      <div id="working-papers-list"></div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div id="publications-list"></div>
+      <div class="section-subheading">Book Chapters</div>
+      <div id="book-chapters-list"></div>
+    </section>
+
+    <section id="wip">
+      <h2>Work in Progress</h2>
+      <div id="wip-list"></div>
+    </section>
+
+    <section id="policy">
+      <h2>Policy Work</h2>
+      <div id="policy-list"></div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <div id="teaching-list"></div>
+    </section>
+
+  </main>
+
+</div>
+</body>
+</html>
